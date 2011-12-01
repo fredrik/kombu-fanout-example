@@ -13,7 +13,7 @@ def produce(conn):
         "Slowly the sun set that evening and the man smiled, just like he always did.",
         "'Tomorrow will be a good day for adventures!', he said softly to the dog that wasn't there."
     ]
-    queue = conn.SimpleQueue(queues.page_queue)
+    queue = conn.SimpleQueue(queues.producer_queue)
     for page_number, page in enumerate(pages, 1):
         document = {
             'page_number': page_number,

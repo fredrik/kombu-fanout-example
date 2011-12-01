@@ -1,0 +1,1 @@
+Using kombu's simple interface to fanout the results of one worker to three consumers.
